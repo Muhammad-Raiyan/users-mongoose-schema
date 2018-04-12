@@ -1,0 +1,28 @@
+{
+  "name": "users-mongoose-schema",
+  "version": "1.0.0",
+  "description": "Users mongoose db schema to be used with Twitter-MS",
+  "main": "user.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muhammad-Raiyan/users-mongoose-schema.git"
+  },
+  "keywords": [
+    "Mongoose",
+    "Schema"
+  ],
+  "author": "Muhammad Raiyanul Islam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Muhammad-Raiyan/users-mongoose-schema/issues"
+  },
+  "homepage": "https://github.com/Muhammad-Raiyan/users-mongoose-schema#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "mongoose": "^5.0.14",
+    "mongoose-timestamp": "^0.6.0"
+  }
+}
