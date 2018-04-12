@@ -12,26 +12,27 @@ const userSchema = new Schema({
         required: true,
         default: false
     },
+
     temporaryToken: {
         type: String,
         required: true
     },
-    following: [{
-        username: String,
-        id: String
-    }],
-    followers: [{
-        username: String,
-        id: String
-    }]
+
+    followers: {
+        type: Number,
+        default: 0
+    },
+
+    following: {
+        type: Number,
+        default: 0
+    }
 });
 
 userSchema.plugin(timestamps);
 const User = mongoose.model('user', userSchema);
 module.exports = User;
 
-
-// TODO Export these into a "hash.js"
 module.exports.hashPassword = async (password) => {
     try{
         const salt = await bcrypt.genSalt(10);
